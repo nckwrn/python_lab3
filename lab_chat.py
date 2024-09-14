@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 from pyre import Pyre
 from pyre import zhelper
 import zmq
