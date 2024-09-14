@@ -15,6 +15,7 @@ def get_peer_node(username):
 
 def join_group(node, group):
     node.join(group)
+    print("~"*89)
     print(f"Joined group: {group}")
 
 def chat_task(ctx, pipe, n, group):
@@ -58,5 +59,6 @@ def chat_task(ctx, pipe, n, group):
     n.stop()
 
 def get_channel(node, group):
+    join_group(node, group)
     ctx = zmq.Context()
     return zhelper.zthread_fork(ctx, chat_task, n=node, group=group)
