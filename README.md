@@ -17,4 +17,4 @@ Doesn't return anything
 def get_channel(node, group): #function name is get_channel
 node:unsure
 group:unsure
-Returns 
+Returns the channel based off of node and group
